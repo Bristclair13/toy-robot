@@ -132,7 +132,7 @@ iex> alias ToyRobot.{Robot, Table, Simulation}
 iex> table = %Table{north_boundary: 4, east_boundary: 4}
 %Table{north_boundary: 4, east_boundary: 4}
 iex> simulation = %Simulation{table: table, robot: %Robot{north: 0, east: 0, facing: :north}}
-simulation |> Simulation.report
+iex> simulation |> Simulation.report
 %Robot{north: 0, east: 0, facing: :north}
 """
 def report(%Simulation{robot: robot}), do: robot
